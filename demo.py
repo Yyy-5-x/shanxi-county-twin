@@ -20,7 +20,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.success(f"已读取上传数据集，共{df.shape[0]}行 {df.shape[1]}列")
 else:
-    df = pd.read_excel("山西县域面板数据.xlsx")
+    df=pd.read_csv("山西县域面板数据.csv")
     st.info("未上传文件，加载本地山西县域面板数据集；上传其他CSV即可切换为其他地区孪生")
 
 df["gdp相对误差"] = np.where(np.abs(df["gdp相对误差"]) < 1e-6, 0, df["gdp相对误差"])
