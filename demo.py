@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score
 from syn_sample import generate_syn_sample, validate_syn_sample
 st.set_page_config(page_title="山西县域经济数字孪生原型", layout="wide")
-st.title("山西县域经济数字孪生原型 — 多源融合+情景仿真+硅基样本")
+st.title("山西县域经济数字孪生原型")
 
 #数据集导入
 st.markdown("数据集导入")
